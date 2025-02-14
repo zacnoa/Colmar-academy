@@ -1,0 +1,22 @@
+#logo{
+    display:flex;
+    align-items: center;
+    height: 32px;
+}
+#logo p{
+    font-size: 1.5em;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 24px;
+}
+header ul li{
+    display:inline-block;
+    margin-left:16px;
+}
+header ul li a{
+    text-decoration: none;
+    color:black;
+}
