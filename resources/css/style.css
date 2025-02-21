@@ -34,6 +34,11 @@ header ul li a{
     text-decoration: none;
     color:black;
 }
+header{
+    position:sticky;
+    top:0px;
+    background-color:white;
+}
 
 
 .banner img{
@@ -102,6 +107,7 @@ header ul li a{
     flex-direction: column;
     border-left: 1px solid rgb(224,220,220);
     padding-top:32px;
+    padding-bottom:32px;
 
 }
 .information-banner{
@@ -116,9 +122,10 @@ header ul li a{
 }
 .noborder{
     border-top: none;
+    padding-top:0;
 }
 .courses{
-    padding:32px 72px;
+    padding:72px 72px;
     background-color: rgb(224,220,220);
 }
 .courses h2{
@@ -168,6 +175,12 @@ header ul li a{
     margin-bottom: 32px;
     font-size: 2em;
 }
+.thesis h4{
+    font-size: 2em;
+}
+.thesis p{
+    font-size: 1.5em;
+}
 .thesis .subject{
     border:none;
 }
@@ -181,7 +194,7 @@ header ul li a{
     padding-left:0;
 }
 footer{
-    border: 1px solid rgb(224,220,220);
+    border-top: 1px solid rgb(224,220,220);
     padding:16px 24px;
     display:flex;
     justify-content:space-between;
@@ -193,4 +206,101 @@ footer li{
 footer a{
     text-decoration: none;
     color:black;
+}
+
+.container.mobile nav{
+    display:flex;
+    height:60px;
+    width:60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.container.mobile{
+    display:none;
+}
+#logo-mobile{
+    padding-left:20px;
+}   
+
+@media only screen and (max-width:480px){
+    
+    header .desktop.container{
+        display:none;
+    }
+    .banner{
+        display:block;
+        padding:0;
+        padding-bottom:24px;
+        margin-bottom:16px;
+    }
+    .banner img{
+        width:100%;
+        height:auto;       
+    }
+    .banner-text{
+        font-size: 1em;
+        padding:0px 24px;
+    }
+    .banner-button{
+        width:100%;
+    }
+    #main-text{
+        display:none;
+    }
+    .information-banner-container{
+        width:100%;
+    }
+    .information-banner-container .subject{
+        border:none;
+        background-color: white;
+    }
+
+    .courses img{
+        display:none;
+        
+    }
+    .courses p{
+        display:none;
+    }
+    .courses-container{ 
+        display:block;
+    }
+    .cours{
+        background-color: rgb(224,220,220);  
+        width:100%;
+        padding:8px;
+      margin:8px 0px; 
+    }
+    .courses{
+        background-color: white;
+    }
+    .thesis-container{
+        display:block;
+    }
+    .main-thesis-container{
+        width:100%;
+    }
+    .thesis-side{
+        display:none;
+    }
+    .thesis p,.thesis h4{
+        display:none;
+    }
+    .thesis{
+        margin:0;
+    }
+    .thesis h2{
+        text-align: center;
+        font-size: 2em;
+    }
+    ul{
+        display:none;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    footer{
+        margin-top:15px;
+    }
+    
 }
