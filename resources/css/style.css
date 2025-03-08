@@ -18,6 +18,10 @@ body{
 #logo p{
     font-size: 1.5em;
 }
+#logo a{
+    text-decoration: none;
+    color:black;
+}
 .container{
     display:flex;
     justify-content: space-between;
@@ -29,8 +33,12 @@ nav{
 header ul li{
     display:inline-block;
     margin-left:16px;
+    border:1px solid white;
+    border-radius: 13px;
+    padding:10px;
+    transition:background-color 0.2s;
 }
-header ul li a{
+header ul a{
     text-decoration: none;
     color:black;
 }
@@ -40,6 +48,9 @@ header{
     background-color:white;
 }
 
+.container.desktop nav ul li:hover{
+    background-color: rgb(224,220,220);
+}
 
 .banner img{
 
@@ -64,6 +75,9 @@ header{
 .banner-button p{
     margin:0;
     color:white;
+}
+.banner-button a{
+    text-decoration: none;
 }
 .banner-text{
     font-size: 2em;
@@ -200,6 +214,7 @@ footer{
     justify-content:space-between;
 }
 footer li{
+    margin:5px;
     display:inline-block;
     
 }
@@ -271,7 +286,7 @@ footer a{
         background-color: rgb(224,220,220);  
         width:100%;
         padding:8px;
-      margin:8px 0px; 
+        margin:8px 0px; 
     }
     .courses{
         background-color: white;
@@ -305,4 +320,35 @@ footer a{
         margin-top:15px;
     }
     
+}
+/* ruleset for sign in page*/
+.sign-in{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid rgb(224,220,220);
+    background-color: rgb(224,220,220);
+    padding:30px 30px;
+    display:inline-block;
+    border-radius: 15px;
+}
+.sign-in h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top:0px;
+}
+.sign-in .container{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.sign-in form{
+    display:flex;
+    flex-direction: column;
+    row-gap:15px;
+}
+.sign-in button{
+    width:60%;
+    margin:0 auto;
 }
